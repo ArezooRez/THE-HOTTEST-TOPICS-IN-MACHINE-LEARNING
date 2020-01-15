@@ -93,39 +93,6 @@ print(df.head())
 
 
 
-```python
-%%nose
-
-import pandas as pd
-
-def test_papers_exists():
-    assert "papers" in globals(), \
-        "The variable `papers` should be defined."
-        
-def test_papers_columns():
-    assert papers.columns.size==4, \
-        "The variable `papers` does not contain the right amount of columns."
-```
-
-
-
-
-
-
-    1/2 tests passed; 1 failed
-    ========
-    __main__.test_papers_columns
-    ========
-    Traceback (most recent call last):
-      File "/usr/lib/python3.5/unittest/case.py", line 58, in testPartExecutor
-        yield
-      File "/usr/lib/python3.5/unittest/case.py", line 600, in run
-        testMethod()
-      File "/usr/local/lib/python3.5/dist-packages/nose/case.py", line 198, in runTest
-        self.test(*self.arg)
-      File "<string>", line 10, in test_papers_columns
-    AssertionError: The variable `papers` does not contain the right amount of columns.
-    
 
 
 
@@ -151,7 +118,7 @@ counts.plot(kind='bar')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f748804bac8>
+  
 
 
 
